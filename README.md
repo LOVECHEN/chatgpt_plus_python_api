@@ -18,7 +18,6 @@ pip install requests
 1. 在`chatgpt.py`代码相应位置粘贴`cf_clearance`、`session_token`、`_puid`的值。
 
 2. 发送新会话窗口消息
-
   ``` python
   from chatgpt import send_new_message
 
@@ -26,7 +25,6 @@ pip install requests
   ```
 
 3. 发送连续对话消息
-
   ``` python
   from chatgpt import send_message
 
@@ -37,7 +35,6 @@ pip install requests
 ## 注意事项
 
 1. 官方限制接口同一时间只能发送一条信息，所以做不了并发，同时发送会返回429状态码，程序已做等待20秒重试处理。
-
   `一次只有一条消息。 在发送另一条消息之前，请等待任何其他响应完成，或者等待一分钟。`
 
-2. 原则上只能Plus会员账号调用，免费账号会有CF验证，_puid没它不行。
+2. 原则上只能Plus会员账号调用，免费账号会有CF验证。
