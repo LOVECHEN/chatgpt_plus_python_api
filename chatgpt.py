@@ -9,7 +9,7 @@ from uuid import uuid1
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
 # 定义代理
-proxies = {"https":"http://127.0.0.1:7890"}
+proxies = {"https":""}
 
 # 定义模型
 model="text-davinci-002-render-sha"
