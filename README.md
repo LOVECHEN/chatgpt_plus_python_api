@@ -15,7 +15,7 @@ pip install requests
 
 ## 快速开始
 
-1. 在代码中粘贴`cf_clearance`、`session_token`、`_puid`的值。
+1. 在`chatgpt.py`代码相应位置粘贴`cf_clearance`、`session_token`、`_puid`的值。
 
 2. 发送新会话窗口消息
 
