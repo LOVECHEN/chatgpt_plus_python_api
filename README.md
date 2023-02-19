@@ -32,6 +32,14 @@ pip install requests
   text = send_message("今天是多少号？", conversation_id)
   ```
 
+4. 新开会话窗口+连续对话
+  ``` python
+  from chatgpt import send_new_message,send_message
+  
+  text,conversation_id = send_new_message("你是谁？")
+  text = send_message("我刚刚问你什么问题？", conversation_id)
+  ```
+
 ## 注意事项
 
 1. 官方限制接口同一时间只能发送一条信息，所以做不了并发，同时发送会返回429状态码，程序已做等待20秒重试处理。
